@@ -29,6 +29,6 @@
         <Entry Placeholder="Email" Text="{Binding EmailText}"/>
       </StackLayout>
 
-      <Button Text="Create" Command="{Binding CreateCommand}" BackgroundColor="Transparent"/>
+      <Button Text="Create" Command="{Binding ProfileCreateCommand}" BackgroundColor="Transparent"/>
   </StackLayout>
 </ContentPage>
