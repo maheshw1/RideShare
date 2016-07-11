@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RideShare.View;assembly=RideShare"
+             xmlns:local1="clr-namespace:Xamarin.Forms; assembly=Xamarin.Forms.Core"
+             x:Class="RideShare.View.LoginPage">
+    
+  <StackLayout Orientation="Vertical" Padding="5" Spacing="5">
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="5">
+      <Label FontSize="20" BackgroundColor="Black">Login</Label>
+    </StackLayout>
+    <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="5">
+        <Image Source="{local:ImageResource RideShare.Images.login.loginlogo.png}"/>
+    </StackLayout>
+    <StackLayout  Orientation="Vertical" Spacing="5">
+      <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="3">
+        <Image IsVisible="True" Source="{Binding UserLogImageSource}">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding UserActiveCommand}"
+                                  CommandParameter="User_Login"/>
+          </Image.GestureRecognizers>
+        </Image>
+        <Label VerticalOptions="Center"> OR </Label>
+        <Image IsVisible="True" Source="{Binding DriverLogImageSource}">
+          <Image.GestureRecognizers>
+            <TapGestureRecognizer Command="{Binding DriverActiveCommand}"
+                                  CommandParameter="Driver_Login"/>
+          </Image.GestureRecognizers>
+        </Image>
+      </StackLayout>
+    </StackLayout>
+    <StackLayout Orientation="Vertical" Spacing="5">
+      <Entry Placeholder="User Name" Text="{Binding UsernameText}" />
+    </StackLayout>
+    <StackLayout Orientation="Vertical" Spacing="5">
+       <Entry Placeholder="Password" Text="{Binding PasswordText}" IsPassword="True"/>
+    </StackLayout>
+    <Button Text="Login" Command="{Binding LoginCommand}"/>
+    
+    <StackLayout>
+
+    </StackLayout>
+    <Button Text="Register" Command="{Binding RegisterCommand}"/>
+  </StackLayout>
+</ContentPage>
