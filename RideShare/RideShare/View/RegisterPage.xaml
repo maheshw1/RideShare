@@ -10,10 +10,25 @@
         <Image Source="{Binding AddPicImageSource}"/>
       </StackLayout>
       <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Padding="5" Spacing="5">
-        <Label Text="Upload Picture" FontSize="12"/>
+        <Label Text="Upload Picture" FontSize="15"/>
+      </StackLayout>
+      <StackLayout Orientation="Vertical" Spacing="5" HorizontalOptions="CenterAndExpand">
+        <StackLayout Orientation="Horizontal" Spacing="5">
+          <Entry Placeholder="First Name" Text="{Binding FirstNameText}" />
+          <Label Text="  "></Label>
+          <Entry Placeholder="Last Name" Text="{Binding LastNameText}" />
+        </StackLayout>
       </StackLayout>
       <StackLayout Orientation="Vertical" Spacing="5">
-         <Entry Placeholder="First Name" Text="{Binding FirstnameText}" />
+        <Entry Placeholder="User Name" Text="{Binding UsernameText}" />
       </StackLayout>
+      <StackLayout Orientation="Vertical" Spacing="5">
+        <Entry Placeholder="Password" Text="{Binding PasswordText}" IsPassword="True"/>
+      </StackLayout>
+      <StackLayout Orientation="Vertical" Spacing="5">
+        <Entry Placeholder="Email" Text="{Binding EmailText}"/>
+      </StackLayout>
+
+      <Button Text="Create" Command="{Binding CreateCommand}" BackgroundColor="Transparent"/>
   </StackLayout>
 </ContentPage>
