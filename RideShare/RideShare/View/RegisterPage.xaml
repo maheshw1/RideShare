@@ -6,6 +6,9 @@
       <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="5">
         <Label FontSize="20" BackgroundColor="Black">Register</Label>
       </StackLayout>
+      <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="5">
+        <Image Source="{Binding AddPicImageSource}"/>
+      </StackLayout>
       <StackLayout Orientation="Vertical" VerticalOptions="Center" HorizontalOptions="Center" Padding="5" Spacing="5">
         <Label Text="Upload Picture" FontSize="12"/>
       </StackLayout>

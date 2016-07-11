@@ -36,6 +36,7 @@ namespace RideShare.ViewModel
             UserActiveCommand = new Command<string>(ExecuteUserActive);
             DriverActiveCommand = new Command<string>(ExecuteDriverActive);
             this.navigation = navigation;
+            LogoImageSource = ImageSource.FromResource("RideShare.Images.login.loginlogo.png");
             UserLogImageSource = ImageSource.FromResource("RideShare.Images.login.userLogActive_icon.png");
             DriverLogImageSource = ImageSource.FromResource("RideShare.Images.login.driverLog_icon.png");
         }
@@ -77,6 +78,8 @@ namespace RideShare.ViewModel
         public ImageSource DriverLogImageSource { protected set; get; }
 
         public ImageSource UserLogImageSource { protected set; get; }
+
+        public ImageSource LogoImageSource { get; protected set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 

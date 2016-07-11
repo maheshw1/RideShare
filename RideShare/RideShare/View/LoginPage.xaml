@@ -10,7 +10,8 @@
       <Label FontSize="20" BackgroundColor="Black">Login</Label>
     </StackLayout>
     <StackLayout VerticalOptions="Center" HorizontalOptions="Center" Padding="5">
-        <Image Source="{local:ImageResource RideShare.Images.login.loginlogo.png}"/>
+        <!--<Image Source="{local:ImageResource RideShare.Images.login.loginlogo.png}"/>-->
+        <Image Source="{Binding LogoImageSource}"/>
     </StackLayout>
     <StackLayout  Orientation="Vertical" Spacing="5">
       <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="3">
