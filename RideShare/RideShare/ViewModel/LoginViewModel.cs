@@ -88,10 +88,12 @@ namespace RideShare.ViewModel
             PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
         }
 
-        private void ExecuteLogin()
+        private async void ExecuteLogin()
         {
-            string xx = string.Empty;
-            xx = this.UsernameText;
+            //string xx = string.Empty;
+            //xx = this.UsernameText;
+            MasterDetailPage profilePage = new ProfileMasterPage();
+            await navigation.PushAsync(profilePage);
 
         }
 

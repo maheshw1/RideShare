@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 
-namespace RideShare
+namespace RideShare.View
 {
-    public partial class ProfilePage : ContentPage
+    public partial class ProfileMasterPage : MasterDetailPage
     {
-        public ProfilePage()
+        public ProfileMasterPage()
         {
             InitializeComponent();
         }
