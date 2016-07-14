@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.cs" />
+    <Compile Include="ViewModel\ProfileMenuViewModel.cs" />
     <Compile Include="ViewModel\RegisterViewModel.cs" />
     <Compile Include="View\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
@@ -100,13 +101,13 @@
     <Content Include="Images\main\googleStore_icon.png" />
     <Content Include="Images\main\person.png" />
     <Content Include="Images\main\splash.png" />
-    <Content Include="Images\navigation\about.png" />
-    <Content Include="Images\navigation\edit.png" />
-    <Content Include="Images\navigation\help.png" />
-    <Content Include="Images\navigation\history.png" />
-    <Content Include="Images\navigation\logout.png" />
+    <EmbeddedResource Include="Images\navigation\about.png" />
+    <EmbeddedResource Include="Images\navigation\edit.png" />
+    <EmbeddedResource Include="Images\navigation\help.png" />
+    <EmbeddedResource Include="Images\navigation\history.png" />
+    <EmbeddedResource Include="Images\navigation\logout.png" />
     <Content Include="Images\navigation\navigation.png" />
-    <Content Include="Images\navigation\settings.png" />
+    <EmbeddedResource Include="Images\navigation\settings.png" />
     <EmbeddedResource Include="Images\register\add_picture.png" />
   </ItemGroup>
   <ItemGroup>

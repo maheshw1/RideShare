@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RideShare.ViewModel;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,7 @@ namespace RideShare.View
         public ProfileMenuPage() 
         {
             InitializeComponent();
+            BindingContext = new ProfileMenuViewModel(Navigation);
         }
     }
 }

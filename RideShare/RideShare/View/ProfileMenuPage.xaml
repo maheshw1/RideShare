@@ -4,14 +4,43 @@
              x:Class="RideShare.View.ProfileMenuPage"
              Title="Menu">
   <ContentPage.Content>
-    <StackLayout VerticalOptions = "FillAndExpand">
-      <ListView VerticalOptions="FillAndExpand" SeparatorVisibility="None">
-        <ListView.ItemTemplate>
-          <DataTemplate>
-            
-          </DataTemplate>
-        </ListView.ItemTemplate>
-      </ListView>
+    <StackLayout Orientation="Vertical">
+      <TableView>
+        <TableView.Root>
+          <TableSection>
+            <ImageCell
+                Text= "  Edit Profile"
+                ImageSource= "{Binding EditProfileImageSource}"
+                Command="{Binding EditProfileCommand}"
+                />
+            <ImageCell 
+                Text="  History" 
+                ImageSource="{Binding HistoryImageSource}"
+                Command="{Binding HistoryCommand}"
+               />
+            <ImageCell
+                Text="  Settings"
+                ImageSource="{Binding SettingsImageSource}"
+                Command="{Binding SettingsCommand}"
+               />
+            <ImageCell
+                Text="  Help"
+                ImageSource="{Binding HelpImageSource}"
+                Command="{Binding HelpCommand}"
+               />
+            <ImageCell
+               Text="  About"
+               ImageSource="{Binding AboutImageSource}"
+               Command="{Binding AboutCommand}"
+               />
+            <ImageCell
+               Text="  Logout"
+               ImageSource="{Binding LogoutImageSource}"
+               Command="{Binding LogoutCommand}"
+               />
+          </TableSection>
+        </TableView.Root>
+      </TableView>
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
