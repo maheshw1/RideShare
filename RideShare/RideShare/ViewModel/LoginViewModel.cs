@@ -99,7 +99,8 @@ namespace RideShare.ViewModel
 
         private async void ExecuteRegister()
         {
-            NavigationPage registerPage = new NavigationPage(new RegisterPage());
+
+            ContentPage registerPage = new RegisterPage();
             await navigation.PushAsync(registerPage);
         }
 

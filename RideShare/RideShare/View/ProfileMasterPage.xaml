@@ -5,13 +5,9 @@
              xmlns:local1="clr-namespace:Xamarin.Forms; assembly=Xamarin.Forms.Core"
              x:Class="RideShare.View.ProfileMasterPage">
   <MasterDetailPage.Master>
-    <local:ProfileMenuPage x:Name="profileMenuPage"/>
+    <local:ProfileMenuPage/>
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <NavigationPage>
-      <x:Arguments>
-        <local:NavigatorMapPage/>
-      </x:Arguments>
-    </NavigationPage>
+    <local:NavigatorMapPage/>
   </MasterDetailPage.Detail>
 </MasterDetailPage>
